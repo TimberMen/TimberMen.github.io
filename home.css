@@ -1,0 +1,32 @@
+
+.container {
+    position: relative;
+    text-align: center;
+}
+.bg-image{
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top:10%;
+  width:100%;
+  z-index: -1;
+}
+.title{
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.text{
+  position : absolute;
+  top:25;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.footer{
+  position: relative;
+  text-align: center;
+  bottom:0%;
+}
