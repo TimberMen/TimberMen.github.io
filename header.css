@@ -1,0 +1,56 @@
+
+.headerParent > #header .bg-image{
+  height:20%;
+  width:100%;
+  left:0px;
+  top:0px;
+  z-index:-1;
+  padding:0;
+  margin:0;
+}
+.headerParent > #header .title{
+  text-align: center;
+  left:50%;
+  width:100%;
+  color: white;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: -2px -2px 10px black;
+  font-size: 45px;
+  background-color: rgb(111,165,89);
+  padding:0;
+  margin:0;
+}
+.headerParent > #header .nav-bar{
+    padding:0;
+    margin:0;
+      background-color: rgb(111,165,89);
+    border-top: 1px solid #001a00;
+}
+.headerParent > #header ul{
+  list-style-type: none;
+  overflow: hidden;
+  padding:0 10;
+  margin:0;
+}
+.headerParent > #header li a{
+  display:inline;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  float: left;
+  padding: 14px 16px;
+  margin:0;
+  border-right: 2px solid #001a00;
+
+}
+.headerParent > #header li a:hover {
+    background-color: white;
+    color: rgb(0, 51, 0);
+    font-weight:bold;
+    margin:0;
+}
+.headerParent > #header  .active{
+    background-color: white;
+    color: rgb(0, 51, 0);
+    font-weight:bold;
+}
