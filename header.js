@@ -11,6 +11,7 @@ function init(){
 		<li><a href="./pricing/pricing.html">Pricing</a></li>
 		</ul>
 	<div>
+	<hr/>
 `;
 	document.getElementById("header").innerHTML = html;
 }
