@@ -13,7 +13,17 @@ body {
 .images{
 	width:50%;
 }
-
+.description{
+  text-align: left;
+  left:50%;
+  width:100%;
+  color: white;
+  /* offset-x | offset-y | blur-radius | color */
+  text-shadow: -1px -1px 10px black;
+  background-color: rgb(111,165,89);
+  padding:1;
+  margin:0;
+}
 .images_label{
   text-align: left;
   left:50%;

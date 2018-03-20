@@ -1,4 +1,3 @@
-
 .headerParent > #header .bg-image{
   display: block;
   margin-left: auto;
@@ -14,14 +13,14 @@
   /* offset-x | offset-y | blur-radius | color */
   text-shadow: -2px -2px 10px black;
   font-size: 45px;
-  background-color: rgb(111,165,89);
+  background-color: rgb(111,145,89);
   padding:0;
   margin:0;
 }
 .headerParent > #header .nav-bar{
     padding:0;
     margin:0;
-    background-color: rgb(111,165,89);
+    background-color: rgb(111,145,89);
 }
 .headerParent > #header ul{
   list-style-type: none;
