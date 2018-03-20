@@ -2,7 +2,11 @@
 body {
   background-color: rgb(111,165,89);
 }
-
+.email-link{
+    color: white;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: -2px -2px 10px black;
+}
 .footer{
   position: relative;
   text-align: center;
@@ -34,7 +38,7 @@ body {
   background-color: rgb(111,165,89);
   padding:10;
   margin:0;
-}  
+}
 
 hr {
     overflow: visible; /* For IE */

@@ -1,22 +1,24 @@
-var sticky;
+var slider = document.getElementById("deweeding-slider");
+ var deweedFt = document.getElementById("deweeding-ft");
+ var deweedPrice;
+ var deweedAmountPerFoot;
+
 function init(){
-	// Get the header
-	var header = document.getElementById("navigation");
+  deweedPrice = document.getElementById("deweeding-price");
 
-	// Get the offset position of the navbar
-	sticky = header.offsetTop;
+  deweedAmountPerFoot = 10;
+  deweedFt.value = slider.value;
+  deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
 }
+
+slider.oninput = function() {
+  deweedPrice.innerHTML = this.value*deweedAmountPerFoot;
+  deweedFt.value=this.value;
+}
+
+deweedFt.oninput = function(){
+  deweedPrice.innerHTML = this.value*deweedAmountPerFoot;
+  slider.value=this.value;
+}
+
 init();
-
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
