@@ -6,7 +6,7 @@ body {
   cursor: pointer;
   height: 25px;
   width: 25px;
-  vertical-align: middle;
+  vertical-align: top;
   border-radius: 0;
   background-color: #eee;
 }
@@ -46,21 +46,22 @@ hr:before{
 }
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 90%;
     height: 45px;
     border-radius: 90px;
     background: #6c5b54;
     outline: none;
-    opacity: 0.7;
+    opacity: .7;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    margin-left: 50px;
 }
 
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 55px;
-    height: 55px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     background: white;
     cursor: pointer;

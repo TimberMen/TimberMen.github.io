@@ -8,10 +8,10 @@ var deweedHeavy = document.getElementById("Heavy");
 
 function init(){
   deweedPrice = document.getElementById("deweeding-price");
-  deweedAmountPerFoot = 20;
+  deweedAmountPerFoot = 15;
   deweedFt.value = slider.value;
   deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
-  deweedMedium.checked=true;
+  deweedLight.checked=true;
 }
 
 slider.oninput = function() {
