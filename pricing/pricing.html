@@ -9,9 +9,14 @@
 		<div id ="header"></div>
 	</div>
 	  <div class="container">
+		<span id="label"> De-weeding: </span>
+		<input class="radioButtton" type="checkbox" id="Light"><span id="label">Light</span>
+		<input class="radioButtton"  type="checkbox" id="Medium"><span id="label">Medium</span>
+		<input class="radioButtton" type="checkbox" id="Heavy"><span id="label">Heavy</span>
+		<br/><br/><br/>
 			<div class="slidecontainer">
-				<span id="label">De-weeding</span><p id = "input-value"><input type="number" min="1" max="100" value="1"  id="deweeding-ft"></input> sqft</p>
 				<input type="range" min="1" max="100" value="1" class="slider" id="deweeding-slider"></input>
+				<p id = "input-value" class="input-label">sqft  <input class="input-text" type="number" min="1" max="100" value="1"  id="deweeding-ft"> </input></p>
 				<p id="Cost">Cost: $<span id="deweeding-price"></span></p>
 			</div>
 	  </div>
