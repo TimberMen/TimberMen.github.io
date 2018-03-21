@@ -4,10 +4,11 @@ function init(){
 	<h1 class="title"> Timber Men  Vaughan</h1>
 	<div class ="nav-bar">
 	<div class="container">
-		<img class="bg-image" src="smallBg.png"></img>
+		<img class="bg-image" src="../pics/smallBg.png"></img>
 	</div>
 		<ul>
 		<li><a href="../index.html">Home</a></li>
+		<li><a href="../projects/projects.html">Projects</a></li>
 		<li><a href="./pricing.html" class="active">Pricing</a></li>
 		</ul>
 	<div>
