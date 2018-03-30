@@ -20,8 +20,8 @@
 		<input class="radioButtton" type="checkbox" id="Heavy"><span id="label">Heavy</span>
 		<br/><br/><br/>
 			<div class="slidecontainer">
-				<input type="range" min="1" max="100" value="50" class="slider" id="deweeding-slider">
-				<p id = "input-value" class="input-label">sqft  <input class="input-text" type="number" min="1" max="100" value="1"  id="deweeding-ft"></p>
+				<input type="range" min="0" max="1000" value="0" class="slider" id="deweeding-slider">
+				<p id = "input-value" class="input-label">sqft  <input class="input-text" type="number" min="0" max="1000" value="0"  id="deweeding-ft"></p>
 				<p id="Cost">Cost: $<span id="deweeding-price"></span></p>
 			</div>
 	  </div>
@@ -36,12 +36,25 @@
 		<input class="radioButtton" type="checkbox" id="Heavy1"><span id="label">Long</span>
 		<br/><br/><br/>
 			<div class="slidecontainer">
-				<input type="range" min="1" max="5000" value="800" class="slider" id="mowing-slider">
-				<p id = "input-value" class="input-label">sqft  <input class="input-text" type="number" min="1" max="5000" value="1"  id="mowing-ft"></p>
+				<input type="range" min="0" max="5000" value="0" class="slider" id="mowing-slider">
+				<p id = "input-value" class="input-label">sqft  <input class="input-text" type="number" min="1" max="5000" value="0"  id="mowing-ft"></p>
 				<p id="Cost">Cost: $<span id="mowing-price"></span></p>
 			</div>
 	  </div>
 
+	  <br/>
+		<hr/><hr/>
+		
+	  <div class="container">
+		<span id="label"> Trenching </span>
+		<br/><br/><br/>
+			<div class="slidecontainer">
+				<input type="range" min="0.0" max="100.000" value="0" class="slider" id="trenching-slider">
+				<p id = "input-value" class="input-label">cu ft  <input class="input-text" type="number" min="0.001" max="100.000" value="0"  id="trenching-ft"></p>
+				<p id="Cost">Cost: $<span id="trenching-price"></span></p>
+			</div>
+	  </div>
+	  
 		<br/>
 		<hr/><hr/>
 

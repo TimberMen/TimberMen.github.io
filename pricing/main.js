@@ -15,28 +15,48 @@ var Heavy1 = document.getElementById("Heavy1");
 var mowingPrice;
 var mowingAmountPerFoot;
 
+
+var trenchingSlider = document.getElementById("trenching-slider");
+var trenchingPrice;
+var trenchingFt= document.getElementById("trenching-ft");
+var trenchingAmountPerFoot;
+
 var totalPrice;
 function init(){
   deweedPrice = document.getElementById("deweeding-price");
-  deweedAmountPerFoot = 5;
+  deweedAmountPerFoot = 2.5;
   deweedFt.value = slider.value;
-  deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
+  deweedPrice.innerHTML = 0;
   deweedLight.checked=true;
 
 
   mowingPrice = document.getElementById("mowing-price");
   mowingAmountPerFoot = 0.05;
   mowingFt.value = mowingSlider.value;
-  mowingPrice.innerHTML = mowingSlider.value*mowingAmountPerFoot;
+  mowingPrice.innerHTML = 0;
   Medium1.checked=true;
 
+  trenchingPrice = document.getElementById("trenching-price");
+  trenchingAmountPerFoot=10;
+  trenchingFt.value  = trenchingSlider.value;
+  trenchingPrice.innerHTML = 0;
   totalPrice = document.getElementById("total-price");
 }
 init();
 calcTotal();
 
 function calcTotal(){
-  totalPrice.innerHTML = parseFloat(deweedPrice.innerHTML) + parseFloat(mowingPrice.innerHTML);
+  totalPrice.innerHTML = parseFloat(deweedPrice.innerHTML) + parseFloat(mowingPrice.innerHTML) + parseFloat(trenchingPrice.innerHTML);
+}
+trenchingSlider.oninput = function() {
+  trenchingPrice.innerHTML = this.value*trenchingAmountPerFoot;
+  trenchingFt.value=this.value
+  calcTotal();
+}
+trenchingFt.oninput = function(){
+  trenchingPrice.innerHTML = this.value*trenchingAmountPerFoot;
+  trenchingSlider.value=this.value;
+  calcTotal();
 }
 slider.oninput = function() {
   deweedPrice.innerHTML = this.value*deweedAmountPerFoot;
@@ -44,13 +64,14 @@ slider.oninput = function() {
   calcTotal();
 }
 
+
 deweedFt.oninput = function(){
   deweedPrice.innerHTML = this.value*deweedAmountPerFoot;
   slider.value=this.value;
   calcTotal();
 }
 deweedLight.onclick = function(){
-  deweedAmountPerFoot = 5;
+  deweedAmountPerFoot = 2.5;
   deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
   deweedMedium.checked=false;
   deweedHeavy.checked=false;
@@ -58,7 +79,7 @@ deweedLight.onclick = function(){
 }
 
 deweedMedium.onclick = function(){
- deweedAmountPerFoot = 10;
+ deweedAmountPerFoot = 3.5;
  deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
   deweedLight.checked=false;
   deweedHeavy.checked=false;
@@ -66,7 +87,7 @@ deweedMedium.onclick = function(){
 }
 
 deweedHeavy.onclick = function(){
-  deweedAmountPerFoot = 15;
+  deweedAmountPerFoot = 5;
   deweedPrice.innerHTML = slider.value*deweedAmountPerFoot;
   deweedMedium.checked=false;
   deweedLight.checked=false;
@@ -85,7 +106,7 @@ mowingFt.oninput = function(){
   calcTotal();
 }
 Light1.onclick = function(){
-  mowingAmountPerFoot = 0.025;
+  mowingAmountPerFoot = 0.035;
   mowingPrice.innerHTML = mowingSlider.value*mowingAmountPerFoot;
   Medium1.checked=false;
   Heavy1.checked=false;
